@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+      "name": "Test GD32F103RET",
+      "cwd": "${workspaceFolder}",
+      "executable": "build/gd32f103ret6.elf",
+      "serverpath": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe", 
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "jlink",
+      "device": "Cortex-M3",
+      "interface": "swd",
+      "armToolchainPath": "C://Program Files (x86)//GNU Arm Embedded Toolchain//10 2021.10//bin",
+      "svdFile": "${workspaceRoot}GD32F10x_XD.svd" 
+    }]
+
+  }

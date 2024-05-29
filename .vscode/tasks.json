@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "make -j -s",
+            "options": {
+                "cwd": "${workspaceRoot}",
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "Download",
+            "type": "shell",
+            "command": "JLink.exe -Device gd32f103re -If SWD -Speed 4000",
+            "options": {
+                "cwd": "${workspaceRoot}",
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+        }
+    ]
+}

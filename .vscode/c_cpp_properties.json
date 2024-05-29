@@ -1,0 +1,31 @@
+{
+  "env": {
+    "GD32SDK": "C:\\Users\\user\\Documents\\Code\\GD32F10x_Firmware_Library_V2.3.0\\"
+  },
+  "configurations": [
+    {
+      "name": "ARMGCC",
+      "includePath": [
+        "${GD32SDK}/Firmware/CMSIS/GD/GD32F10x/Source",
+        "${GD32SDK}/Firmware/GD32F10x_standard_peripheral/Source",
+        "${GD32SDK}/Firmware/CMSIS",
+        "${GD32SDK}/Firmware/CMSIS/GD/GD32F10x/Include",
+        "${GD32SDK}/Firmware/GD32F10x_standard_peripheral/Include",
+        "${workspaceFolder}/segger_rtt",
+        "${workspaceFolder}/freertos/include",
+        "${workspaceFolder}/inc",
+        "${workspaceFolder}"
+      ],
+      "defines": [
+        "GD32F10X_XD",
+        "USE_STDPERIPH_DRIVER"
+      ],
+      "compilerPath": "C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "clang-x64",
+      "configurationProvider": "ms-vscode.makefile-tools"
+    }
+  ],
+  "version": 4
+}
